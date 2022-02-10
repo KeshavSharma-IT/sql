@@ -1,0 +1,336 @@
+  <html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand text-danger" href="index.html"><img src="1.jpg" width="70px"><b>C</b>ar<b>4</b>u</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ">
+      <li class="nav-item active mx-5">
+        <a class="nav-link text-danger" href="index.html"><b>Home</b> </a>
+      </li>
+      <li class="nav-item active mx-5"> 
+      	<a href="contactus.html" class="nav-link text-danger"><b>Contact</b> </a>
+      </li>
+      <li class="nav-item active mx-5"> 
+      	<a href="register.html" class="nav-link text-danger"><b>Login/Register</b></a>
+      </li>
+       <li class="nav-item active mx-5"> 
+      	<a href="feedback.html" class="nav-link text-danger"><b>Feedback</b></a>
+      </li>
+  </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-danger my-2 " type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!--nav bar ends-->
+
+
+<div class="container my-5 border border-danger p-5 ">
+<form method="post">
+
+<div class="form-row">
+    <div class="form-group col-md-12">
+      <h2 class="text-danger text-center ">Register</h2>
+      <hr class="wd-25 bg-danger">
+    </div>
+    
+  </div>
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="firstname"> First Name</label>
+      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First name" onkeyup="remove_validation()">
+      <label id="varify_name" style="position: relative;top:10px" ></label>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="lastname">Last name</label>
+      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="last name" onkeyup ="remove_validation()" >
+      <label id="varify_lastname" style="position: relative;top:10px" ></label>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="Email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Email" onkeyup="remove_validation()">
+      <label id="varify_email" style="position: relative;top:10px"></label>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="Password">Password</label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Password" onkeyup="remove_validation()">
+      <label id="varify_password" style="position: relative;top:10px" ></label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="1234 Main St" onkeyup="remove_validation()">
+    <label id="varify_address" style="position: relative;top:10px" ></label>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" name="inputAddress2" placeholder="Apartment, studio, or floor" onkeyup="remove_validation()">
+    <label id="varify_address2" ></label>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity" name="inputCity" onkeyup="remove_validation()">
+      <label id="varify_city" style="position: relative;top:10px" ></label>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <input type="text" class="form-control" id="inputState" name="inputState" onkeyup="remove_validation()">
+      <label id="varify_state" style="position: relative;top:10px" ></label>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip" name="inputZip"
+      onkeyup="remove_validation()">
+      <label id="varify_zip" style="position: relative;top:10px" ></label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+      <label id="varify_label" style="position: relative;top:10px" ></label>
+    </div>
+  </div>
+  <div>
+  <button type="submit"  class="btn btn-danger" name="sign">Sign in</button>
+
+  <button type="button"  class="btn btn-danger mx-5" data-toggle="modal" data-target="#exampleModal">Login</button>
+</div>
+</form>
+</div>
+
+
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-danger ">
+        <h5 class="modal-title text-white " id="exampleModalLabel"> <b>Welcome to Car4U</b></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+          <label>E-mail</label>
+          <input type="text" id="email" placeholder="Enter your E-mail" class="form-control">
+      </div>
+      <div class="form-group">
+          <label>Password</label>
+          <input type="Password" id="password" placeholder="Enter your Password" class="form-control">
+      </div>
+    </form>
+  </div>
+
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-danger">Login</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid bg-danger text-center text-light p-3 "> &copy;<b>Car4U</b></footer>
+
+
+<!-- 
+<script>
+
+
+
+ function remove_validation()
+ {
+  var a=document.getElementById("firstname").value;
+    var b=document.getElementById("lastname").value;
+    var c=document.getElementById("email").value;
+    var d=document.getElementById("password").value;
+    var e=document.getElementById("inputAddress").value;
+    var f=document.getElementById("inputAddress2").value;
+    var g=document.getElementById("inputCity").value;
+    var h=document.getElementById("inputState").value;
+    var i=document.getElementById("inputZip").value;
+    var j=document.getElementById("gridCheck").value;
+
+
+    
+    if(a!='')
+    {
+      document.getElementById("varify_name").innerHTML="<div style='color:green'><i class='fa fa-check'></i></div>";
+    }
+ 
+    if(b!='')
+    {
+      document.getElementById("varify_lastname").innerHTML="<div style='color:green'><i class='fa fa-check'></i></div>";
+    }
+ 
+    
+    if(c!='')
+    {
+      document.getElementById("varify_email").innerHTML="<div style='color:green'><i class='fa fa-check'></i></div>";
+    }
+ 
+   
+    if(d!='')
+    {
+      document.getElementById("varify_password").innerHTML="<div style='color:green'><i class='fa fa-check'></i></div>";
+    }
+ 
+    if(e!='')
+    {
+      document.getElementById("varify_address").innerHTML="<div style='color:green'><i class='fa fa-check'></i></div>";
+    }
+ 
+    
+    if(f!='')
+    {
+      document.getElementById("varify_address2").innerHTML="<div style='color:green'><i class='fa fa-check'></i></div>";
+    }
+ 
+    
+    if(g!='')
+    {
+      document.getElementById("varify_city").innerHTML="<div style='color:green'><i class='fa fa-check'></i></div>";
+    }
+ 
+    
+    if(h!='')
+    {
+      document.getElementById("varify_state").innerHTML="<div style='color:green'><i class='fa fa-check'></i></div>";
+    }
+    
+    if(i!='')
+    {
+      document.getElementById("varify_zip").innerHTML="<div style='color:green'><i class='fa fa-check'></i></div>";
+    }
+ 
+
+    if(j!='')
+    {
+      document.getElementById("varify_label").innerHTML="<div style='color:green'><i class='fa fa-check'></i></div>";
+    }
+ 
+
+ }
+
+
+
+</script>
+
+
+
+
+<script type="text/javascript">
+  function abc() {
+    var a,b,c,d,e,f,g,h,i;
+    a=$("#firstname").val();
+    b=$("#lastname").val();
+    c=$("#email").val();
+    d=$("#password").val();
+    e=$("#inputAddress").val();
+    f=$("#inputAddress2").val();
+    g=$("#inputCity").val();
+    h=$("#inputState").val();
+    i=$("#inputZip").val();
+    j=$("#gridCheck").val();
+var flag=0;
+    if(a=='')
+    {
+      flag=1;
+      document.getElementById("varify_name").innerHTML="<div style='color:red'>requir field</div>";
+    }
+    if(b=='')
+    {
+      flag=1;
+      document.getElementById("varify_lastname").innerHTML="<div style='color:red'>requir field</div>";
+    }
+    
+    if(c=='')
+    {
+      flag=1;
+      document.getElementById("varify_email").innerHTML="<div style='color:red'>requir field</div>";
+    }
+    
+    if(d=='')
+    {
+      flag=1;
+      document.getElementById("varify_password").innerHTML="<div style='color:red'>requir field</div>";
+    }
+    
+    if(e=='')
+    {
+      flag=1;
+      document.getElementById("varify_address").innerHTML="<div style='color:red'>requir field</div>";
+    }
+       if(f=='')
+    {
+      flag=1;
+      document.getElementById("varify_address2").innerHTML="<div style='color:red'>requir field</div>";
+    }
+    
+    if(g=='')
+    {
+      flag=1;
+      document.getElementById("varify_city").innerHTML="<div style='color:red'>requir field</div>";
+    }
+    
+    if(h=='')
+    {
+      flag=1;
+      document.getElementById("varify_state").innerHTML="<div style='color:red'>requir field</div>";
+    }
+
+     if(i=='')
+    {
+      flag=1;
+      document.getElementById("varify_zip").innerHTML="<div style='color:red'>requir field</div>";
+    }
+
+    if(j=='')
+    {
+      flag=1;
+      document.getElementById("varify_label").innerHTML="<div style='color:red'>requir field</div>";
+    }
+
+}
+  
+
+
+</script> -->
+
+
+</body>
+</html>
